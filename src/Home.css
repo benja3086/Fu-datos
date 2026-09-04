@@ -1,0 +1,661 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   PÁGINA
+========================================= */
+
+.Home {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 42px 20px 60px;
+
+  background: #f8f9f2;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  color: #173300;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.bank-header {
+  width: 100%;
+  max-width: 520px;
+
+  margin: 0 auto 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* ICONO */
+
+.bank-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 13px;
+
+  border-radius: 10px;
+
+  background: #83c600;
+
+  color: white;
+
+  box-shadow:
+    0 6px 15px rgba(86, 130, 0, 0.15);
+}
+
+.bank-icon span {
+  font-size: 17px;
+}
+
+
+/* TITULO */
+
+.bank-header h2 {
+  margin: 0;
+
+  color: #173300;
+
+  font-size: 25px;
+  font-weight: 750;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.bank-header p {
+  max-width: 390px;
+
+  margin: 10px 0 0;
+
+  color: #7b8e32;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   CONTENEDOR TARJETAS
+========================================= */
+
+.bank-cards {
+  width: 100%;
+  max-width: 520px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   TARJETA GENERAL
+========================================= */
+
+.bank-card {
+  width: 100%;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 25px 22px 22px;
+
+  border-radius: 21px;
+}
+
+
+/* =========================================
+   TARJETA PESOS
+========================================= */
+
+.pesos-card {
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 255, 255, 0.12),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #6fb600 0%,
+      #8dcc00 100%
+    );
+
+  box-shadow:
+    0 12px 30px rgba(73, 112, 0, 0.18);
+}
+
+
+/* Decoración */
+
+.pesos-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -85px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================================
+   TARJETA DÓLARES
+========================================= */
+
+.dolares-card {
+  color: #173300;
+
+  background: #ffffff;
+
+  border: 1px solid #d7e7a2;
+
+  box-shadow:
+    0 8px 25px rgba(40, 60, 10, 0.06);
+}
+
+
+/* =========================================
+   HEADER DE TARJETA
+========================================= */
+
+.card-header {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 15px;
+}
+
+
+/* =========================================
+   LABEL MONEDA
+========================================= */
+
+.currency-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: 1px;
+}
+
+
+/* PESOS */
+
+.pesos-card .currency-label {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* DÓLARES */
+
+.dolares-card .currency-label {
+  color: #86a21f;
+}
+
+
+/* =========================================
+   NOMBRE
+========================================= */
+
+.card-header h1 {
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.3;
+
+  font-weight: 750;
+
+  letter-spacing: -0.2px;
+}
+
+
+/* =========================================
+   ICONO MONEDA
+========================================= */
+
+.currency-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+/* PESOS */
+
+.pesos-card .currency-icon {
+  background: rgba(255, 255, 255, 0.18);
+
+  color: white;
+}
+
+
+/* DÓLARES */
+
+.usd-icon {
+  width: 48px;
+
+  font-size: 10px;
+
+  background: #edf5c9;
+
+  border: 1px solid #c9dd80;
+
+  color: #638200;
+}
+
+
+/* =========================================
+   SEPARADOR
+========================================= */
+
+.separator {
+  width: 100%;
+  height: 1px;
+
+  margin: 19px 0 17px;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+/* PESOS */
+
+.pesos-card .separator {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* DÓLARES */
+
+.dolares-card .separator {
+  background: #e4ebd5;
+}
+
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.bank-info {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 17px;
+}
+
+
+.info-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: 1px;
+}
+
+
+/* PESOS */
+
+.pesos-card .info-label {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+
+/* DÓLARES */
+
+.dolares-card .info-label {
+  color: #89a52b;
+}
+
+
+/* =========================================
+   FILA DE INFORMACIÓN
+========================================= */
+
+.info-row {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+/* VALOR */
+
+.bank-value {
+  min-width: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   BOTONES COPIAR
+========================================= */
+
+.copy-btn {
+  flex-shrink: 0;
+
+  padding: 5px 9px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+
+/* =========================================
+   COPIAR — TARJETA VERDE
+========================================= */
+
+.green-copy {
+  border: none;
+
+  background: rgba(255, 255, 255, 0.17);
+
+  color: white;
+}
+
+
+.green-copy:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================
+   COPIAR — TARJETA BLANCA
+========================================= */
+
+.white-copy {
+  background: #f5f9e9;
+
+  border: 1px solid #d6e69e;
+
+  color: #688600;
+}
+
+
+.white-copy:hover {
+  background: #edf5d5;
+}
+
+
+/* =========================================
+   PARTE INFERIOR
+========================================= */
+
+.bank-footer {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+  margin-top: 3px;
+}
+
+
+.footer-item {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer-item strong {
+  font-size: 11px;
+
+  line-height: 1.3;
+
+  font-weight: 650;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .Home {
+    padding:
+      25px
+      15px
+      40px;
+  }
+
+
+  .bank-header {
+    margin-bottom: 22px;
+  }
+
+
+  .bank-icon {
+    width: 38px;
+    height: 38px;
+
+    margin-bottom: 11px;
+  }
+
+
+  .bank-header h2 {
+    font-size: 22px;
+  }
+
+
+  .bank-header p {
+    max-width: 340px;
+
+    font-size: 12px;
+  }
+
+
+  .bank-cards {
+    gap: 14px;
+  }
+
+
+  .bank-card {
+    padding:
+      21px
+      18px
+      19px;
+
+    border-radius: 19px;
+  }
+
+
+  .card-header h1 {
+    font-size: 15px;
+  }
+
+
+  .currency-label {
+    font-size: 8px;
+  }
+
+
+  .currency-icon {
+    width: 37px;
+    height: 37px;
+  }
+
+
+  .usd-icon {
+    width: 45px;
+  }
+
+
+  .bank-value {
+    font-size: 10px;
+  }
+
+
+  .copy-btn {
+    padding:
+      5px
+      8px;
+
+    font-size: 8px;
+  }
+
+
+  .footer-item strong {
+    font-size: 10px;
+  }
+
+}
+
+
+/* =========================================
+   CELULARES MUY PEQUEÑOS
+========================================= */
+
+@media (max-width: 370px) {
+
+  .Home {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .bank-header h2 {
+    font-size: 21px;
+  }
+
+
+  .bank-card {
+    padding:
+      19px
+      15px
+      17px;
+  }
+
+
+  .bank-value {
+    font-size: 9px;
+  }
+
+
+  .copy-btn {
+    padding:
+      4px
+      6px;
+
+    font-size: 7px;
+  }
+
+
+  .bank-footer {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+}
