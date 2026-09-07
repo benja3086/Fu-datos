@@ -619,7 +619,6 @@
 /* =========================================
    CELULARES MUY PEQUEÑOS
 ========================================= */
-
 @media (max-width: 370px) {
 
   .Home {
@@ -629,36 +628,56 @@
 
 
   .bank-header h2 {
-    font-size: 21px;
+    font-size: 23px;
+  }
+
+
+  .bank-header p {
+    font-size: 13px;
   }
 
 
   .bank-card {
     padding:
-      19px
-      15px
-      17px;
+      21px
+      16px
+      19px;
+  }
+
+
+  .card-header h1 {
+    font-size: 18px;
+  }
+
+
+  .currency-label {
+    font-size: 9px;
   }
 
 
   .bank-value {
-    font-size: 9px;
+    font-size: 12px;
   }
 
 
   .copy-btn {
     padding:
-      4px
-      6px;
+      6px
+      8px;
 
-    font-size: 7px;
+    font-size: 9px;
+  }
+
+
+  .footer-item strong {
+    font-size: 11px;
   }
 
 
   .bank-footer {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    gap: 12px;
+    gap: 10px;
   }
 
 }

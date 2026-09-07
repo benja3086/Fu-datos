@@ -100,13 +100,13 @@ function Home() {
             <div className="footer-item">
               <span className="info-label">BANCO / ENTIDAD</span>
 
-              <strong>Banco Nación</strong>
+              <strong>Banco Galicia</strong>
             </div>
 
             <div className="footer-item">
               <span className="info-label">TIPO DE CUENTA</span>
 
-              <strong>Caja de Ahorro</strong>
+              <strong>Corriente</strong>
             </div>
           </div>
         </div>
