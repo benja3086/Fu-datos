@@ -150,14 +150,14 @@ function Home() {
           {/* ALIAS */}
 
           <div className="bank-info">
-            <span className="info-label">ALIAS</span>
+            <span className="info-label">CUIT</span>
 
             <div className="info-row">
-              <span className="bank-value">CENTRO.SUELA.LIMITE</span>
+              <span className="bank-value">30-52227451-4</span>
 
               <button
                 className="copy-btn white-copy"
-                onClick={() => copiar("CENTRO.SUELA.LIMITE", "alias-dolares")}
+                onClick={() => copiar("30-52227451-4", "alias-dolares")}
               >
                 {copiado === "alias-dolares" ? "✓ Copiado" : "▣ Copiar"}
               </button>
@@ -198,14 +198,14 @@ function Home() {
           {/* CBU */}
 
           <div className="bank-info">
-            <span className="info-label">CBU</span>
+            <span className="info-label"> N* de ruta</span>
 
             <div className="info-row">
-              <span className="bank-value"> Faltan estos datos</span>
+              <span className="bank-value"> 101019644</span>
 
               <button
                 className="copy-btn white-copy"
-                onClick={() => copiar("0070007831009750095551", "cbu-dolares")}
+                onClick={() => copiar("101019644", "cbu-dolares")}
               >
                 {copiado === "cbu-dolares" ? "✓ Copiado" : "▣ Copiar"}
               </button>
@@ -215,16 +215,39 @@ function Home() {
           {/* ALIAS */}
 
           <div className="bank-info">
-            <span className="info-label">ALIAS</span>
+            <span className="info-label">Numero de cuenta</span>
 
             <div className="info-row">
-              <span className="bank-value">Faltan estos datos</span>
+              <span className="bank-value">219844930348</span>
 
               <button
                 className="copy-btn white-copy"
-                onClick={() => copiar("CENTRO.SUELA.LIMITE", "alias-dolares")}
+                onClick={() => copiar("219844930348", "alias-dolares")}
               >
                 {copiado === "alias-dolares" ? "✓ Copiado" : "▣ Copiar"}
+              </button>
+            </div>
+          </div>
+          <div className="bank-info">
+            <span className="info-label">Direccion</span>
+
+            <div className="info-row">
+              <span className="bank-value">
+                {" "}
+                Combate de Las Piedras, 1071, San Miguel de Tucumán, Tucumán
+                T4000, Argentina
+              </span>
+
+              <button
+                className="copy-btn white-copy"
+                onClick={() =>
+                  copiar(
+                    "Combate de Las Piedras, 1071, San Miguel de Tucumán, Tucumán T4000, Argentina",
+                    "direccion-dolares",
+                  )
+                }
+              >
+                {copiado === "direccion-dolares" ? "✓ Copiado" : "▣ Copiar"}
               </button>
             </div>
           </div>
@@ -235,13 +258,13 @@ function Home() {
             <div className="footer-item">
               <span className="info-label">BANCO / ENTIDAD</span>
 
-              <strong>Banco Nación</strong>
+              <strong> Lead Bank</strong>
             </div>
 
             <div className="footer-item">
               <span className="info-label">TIPO DE CUENTA</span>
 
-              <strong>Caja de Ahorro</strong>
+              <strong>Corriente</strong>
             </div>
           </div>
         </div>
