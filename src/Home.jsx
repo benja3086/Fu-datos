@@ -184,7 +184,7 @@ function Home() {
           <div className="card-header">
             <div>
               <span className="currency-label">
-                CUEN BANCARIA EN EE.UU EN DÓLARES
+                CUENTA BANCARIA EN EE.UU EN DÓLARES
               </span>
 
               <h1>Fabiana Sofran</h1>
@@ -201,7 +201,7 @@ function Home() {
             <span className="info-label">CBU</span>
 
             <div className="info-row">
-              <span className="bank-value"> 0070007831009750095551</span>
+              <span className="bank-value"> Faltan estos datos</span>
 
               <button
                 className="copy-btn white-copy"
@@ -218,7 +218,7 @@ function Home() {
             <span className="info-label">ALIAS</span>
 
             <div className="info-row">
-              <span className="bank-value">CENTRO.SUELA.LIMITE</span>
+              <span className="bank-value">Faltan estos datos</span>
 
               <button
                 className="copy-btn white-copy"
