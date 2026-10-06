@@ -1,0 +1,198 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer-message {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 55px 25px 60px;
+
+  background: #f8f9f2;
+  color: #173300;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.footer-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* =========================================
+   PÁRRAFOS
+========================================= */
+
+.footer-message p {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto 18px;
+
+  color: #173300;
+
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.55;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   PRIMER MENSAJE
+========================================= */
+
+.footer-message p:first-child {
+  margin-bottom: 22px;
+
+  color: #173300;
+
+  font-size: 30px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   CORREO
+========================================= */
+
+.footer-message p:nth-child(4) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  max-width: 100%;
+
+  margin: 5px auto 25px;
+
+  padding: 12px 22px;
+
+  border-radius: 12px;
+
+  background: #edf5c9;
+  border: 1px solid #c9dd80;
+
+  color: #638200;
+
+  font-size: 16px;
+}
+
+
+/* Correo en negrita */
+
+.footer-message strong {
+  color: #173300;
+  font-weight: 750;
+}
+
+
+/* =========================================
+   ÚLTIMO MENSAJE
+========================================= */
+
+.footer-message p:last-child {
+  margin-top: 12px;
+  margin-bottom: 0;
+
+  color: #173300;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+
+
+/* =========================================
+   EFECTO SUAVE
+========================================= */
+
+.footer-message p:not(:first-child):not(:nth-child(4)) {
+  max-width: 780px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .footer-message {
+    padding: 40px 18px 45px;
+  }
+
+  .footer-message p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .footer-message p:first-child {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .footer-message p:nth-child(4) {
+    padding: 10px 15px;
+    font-size: 14px;
+
+    word-break: break-word;
+  }
+
+  .footer-message p:last-child {
+    font-size: 16px;
+  }
+
+  .footer-message::before {
+    width: 40px;
+    height: 3px;
+    margin-bottom: 22px;
+  }
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 370px) {
+
+  .footer-message {
+    padding: 35px 14px 40px;
+  }
+
+  .footer-message p {
+    font-size: 14px;
+  }
+
+  .footer-message p:first-child {
+    font-size: 24px;
+  }
+
+  .footer-message p:nth-child(4) {
+    font-size: 13px;
+    padding: 9px 12px;
+  }
+
+  .footer-message p:last-child {
+    font-size: 15px;
+  }
+}   

@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import Home from './Home'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Home from "./Home";
+import Footer from "./Footer/Footer";
+import "./App.css";
 
 function App() {
-
   return (
     <>
+      <Footer />
       <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
